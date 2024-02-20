@@ -1,4 +1,4 @@
-package com.devsuperior.ClienteService.entities;
+package com.devsuperior.clienteservice.entities;
 
 import jakarta.persistence.*;
 

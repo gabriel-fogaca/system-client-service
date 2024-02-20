@@ -1,7 +1,6 @@
-package com.devsuperior.ClienteService.dto;
+package com.devsuperior.clienteservice.dto;
 
-import com.devsuperior.ClienteService.entities.Client;
-import jakarta.persistence.Column;
+import com.devsuperior.clienteservice.entities.Client;
 
 import java.time.LocalDate;
 

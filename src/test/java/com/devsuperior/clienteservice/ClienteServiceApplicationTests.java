@@ -1,4 +1,4 @@
-package com.devsuperior.ClienteService;
+package com.devsuperior.clienteservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
