@@ -3,19 +3,22 @@ package com.devsuperior.clienteservice.dto;
 import com.devsuperior.clienteservice.entities.Client;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PastOrPresent;
+import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
 public class ClientDTO {
     private Long id;
-    @Size(min = 3, max = 3, message = "Nome precisa ter de 3 a 80 caracteres")
+    @Size(min = 3, max = 80, message = "Nome precisa ter de 3 a 80 caracteres")
     @NotBlank(message = "Campo requerido")
     private String name;
     private String cpf;
+    @PositiveOrZero(message = "Valor inválido")
     private Double income;
     @PastOrPresent(message = "A data do evento deve ser no passado ou presente")
     private LocalDate birthDate;
+    @PositiveOrZero(message = "Valor inválido")
     private Integer children;
 
     public ClientDTO() {
